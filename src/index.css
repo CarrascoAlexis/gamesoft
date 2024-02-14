@@ -1,13 +1,39 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+    font-family: "Cashrole";
+    src: local("Cashrole"), url("./fonts/Cashrole.ttf") format("truetype");
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+    font-family: "Arial Rounded MT Bold";
+    src: local("Arial Rounded MT Bold"), url("./fonts/arlrdbd.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Fresca";
+    src: local("Fresca-Regular"), url("./fonts/Fresca-Regular.ttf") format("truetype");
+}
+
+:root {
+    --dark-background: #181510; 
+    --dark-gold: #785F37;
+    --text-light-gold: #E9DBBD;
+    --text-dark-gold: #A08C5B;
+}
+
+.d-flex {
+    display: flex;
+}
+
+#root{
+    margin: 0;
+}
+
+dot {
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: baseline;
+    margin: auto 10px;
+    background-color: var(--dark-gold)
 }

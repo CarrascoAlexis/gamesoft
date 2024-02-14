@@ -1,0 +1,40 @@
+header{
+    background-color: var(--dark-background);
+    color: var(--dark-gold);
+    margin: 0;
+}
+
+nav>ul{
+    display: flex;
+    list-style: none;
+    margin: 0 auto;
+    font-family: 'Arial Rounded MT Bold';
+
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--dark-gold)
+}
+
+nav a:hover{
+    color:var(--text-light-gold);
+}
+
+nav li {
+    margin: auto 0;
+}
+
+nav h1{
+    font-family: "Cashrole";
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+nav p{
+    font-family: 'Fresca';
+    color: var(--text-light-gold);
+    position: relative;
+    float: right;
+    margin: 0;
+}
