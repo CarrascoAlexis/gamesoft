@@ -1,25 +1,20 @@
-
 import '../../index.css';
+import PageBase from '../PageBase/PageBase';
 import './Header.css';
 import React from "react";
+import { Link } from "react-router-dom";
 
 
-function Header(props)
+export default class Header extends PageBase
 {
-    let connectText = "Connexion";
-    const connectLink = connectText === "Connexion"? "/connect" : "/account"
-    if(props.account != null && props.account.id != null)
+
+    render()
     {
-        connectText = "Compte";
+        return(
+        <header onMouseEnter={this.checkConnection}>
+            <nav className='d-flex'>
+                <Link to={this.isConnected() ? "/profil" : "/connexion"} >${this.isConnected() ? "Profil" : "Connexion" }</Link>
+            </nav>
+        </header>)
     }
-
-    return(
-    <header>
-            
-        <nav className='d-flex'>
-            ${connectLink}
-        </nav>
-    </header>)
 }
-
-export default Header;
